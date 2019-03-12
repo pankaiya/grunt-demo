@@ -1,0 +1,9 @@
+function rectangle(){
+  var $width = $('#width'),
+      
+
+  var rect=rectangle();
+
+  $perimeter.val(rect.perimeter(w,h));
+  $area.val()
+}
