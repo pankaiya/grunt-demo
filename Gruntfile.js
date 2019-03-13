@@ -1,9 +1,9 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     less: {
-      development: {
+      compile: {
         files: {
-                    'css/layout.css': 'less/layout.less'
+                    'css/compiled.css': 'less/*.less'
             
         }
                      
@@ -15,7 +15,7 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-less');
 
-    grunt.registerTask('default', ['less']);
+    grunt.registerTask('default', ['less:compile']);
 
 };
 
